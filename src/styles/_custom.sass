@@ -84,14 +84,55 @@
 .banner-interno__titulo
   h2
     color: $color-sistema-texto !important
+//COLOR TEXTO//
+.colr
+  color: $color-acento-botones
+  &_1
+    color: #777777
+  &_2
+    color: $color-secundario !important
+  &_3
+    color: $color-primario
 //FONDOS//
 .bgr
   background-color: #FED947
+  &_1
+    background-color: white
+  &_2
+    background-color: #C4D1FF
+  &_3
+    background-color: #E1E8FF
+  &_4
+    background-color: #6B8DFC
+  &_5
+    border: 1px solid #3C3FA7
+  &_6
+    background-image: url("../assets/curso/tema1/fondo2.svg")
+    background-repeat: no-repeat
+    background-size: cover
+  &_7
+    background-color: #ACADE1
+  &_8
+    border: 2px solid #3C3FA7
+    border-radius: 20px
+  &_9
+    background-color: #FED947
+    width: fit-content
+    border-radius: 10px
+  &_10
+    background-color: #A6BBFF
+  &_11
+    background-image: url("../assets/curso/tema2/10.svg")
+    background-repeat: no-repeat
+    background-size: cover
+  &_12
+    background-color: #DDDEFF
+  
 //FONDOS COMPLETOS DE CONTENIDO//
 .bg_grad-01
   position: relative
   .row, p
-    position: relative
+    position  : relative
   &::before
     content: ''
     position: absolute
@@ -139,6 +180,200 @@
       height: calc(100% + 4rem)
     @media ( max-width: $bp-max-md )
       top: -4%
+.bg_grad-04
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -5%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 61%
+    background-color: #FFBFC1
+.bg_grad-05
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: 56%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 40%
+    background-color: #E1E8FF
+    border-bottom-left-radius: 100% 
+    border-bottom-right-radius: 100%
+.bg_grad-06
+  position: relative
+  .row, p
+    position  : relative
+  &::before
+    content: ''
+    position: absolute
+    top: 5%
+    left: 17%
+    width: 82%
+    height: 91%
+    background-color: #FFDFE0
+    border-radius: 20px
+    @media ( max-width: $bp-max-lg )
+      top: -8%    
+      height: calc(100% + 4rem)
+    @media ( max-width: $bp-max-md )
+      top: -4%
+.bg_grad-07
+  position: relative
+  .row, 
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -5%
+    left: 0
+    width: calc(100% + 6rem)
+    height: calc(100% + 5rem)
+    background-image: url("../assets/curso/tema1/fondo1.svg")
+    background-repeat: no-repeat
+    background-size: cover
+.bg_grad-08
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -2%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 84%
+    background-color: #FFBFC1
+.bg_grad-09
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -2%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 84%
+    background-color: #6B8DFC
+.bg_grad-10
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -2%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 84%
+    background-color: #8284D2
+.bg_grad-11
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -5%
+    left: 0
+    width: calc(100% + 6rem)
+    height: calc(100% + 5rem)
+    background-image: url("../assets/curso/tema1/fondo3.svg")
+    background-repeat: no-repeat
+    background-size: cover
+.bg_grad-12
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -4%
+    left: 0
+    width: calc(100% + 6rem)
+    height: calc(100% + 5rem)
+    background-image: url("../assets/curso/tema2/fondo1.svg")
+    background-repeat: no-repeat
+    background-size: cover
+.bg_grad-13
+  position: relative
+  .row, p
+    position  : relative
+  &::before
+    content: ''
+    position: absolute
+    top: 10%
+    left: 21%
+    width: 72%
+    height: 80%
+    background-color: #FFF0F1
+    border-radius: 20px
+    @media ( max-width: $bp-max-lg )
+      top: -8%    
+      height: calc(100% + 4rem)
+    @media ( max-width: $bp-max-md )
+      top: -4%
+.bg_grad-14
+  position: relative
+  .bgr_10
+    position  : relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: 36%
+    left: 0
+    width: calc(100% + 6rem)
+    height: 72%
+    background-color: #FFDFE0
+    @media ( max-width: $bp-max-lg )
+      top: -8%    
+      height: calc(100% + 4rem)
+    @media ( max-width: $bp-max-md )
+      top: -4%
+.bg_grad-15
+  position: relative
+  .row, .slyder-f, 
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -4%
+    left: 0
+    width: calc(100% + 6rem)
+    height: calc(100% + 5rem)
+    background-color: #6B8DFC
+.bg_grad-16
+  position: relative
+  .row, .slyder-f
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    margin: 0 -3rem   
+    top: -4%
+    left: 0
+    width: calc(100% + 6rem)
+    height: calc(100% + 5rem)
+    background-image: url("../assets/curso/tema3/fondo1.svg")
+    background-repeat: no-repeat
+    background-size: cover
 //POSICION EN PANTALLA//
 .pst
   position: absolute
@@ -168,6 +403,9 @@
     @media ( max-width: $bp-max-xs )
       bottom: -12%
       left: -1%
+  &_2
+    background-repeat: no-repeat
+    background-size: cover
 
 //CLASES REEMPLAZADAS//
 .traduccionAudio__chat__item__message__bubble
@@ -178,3 +416,23 @@
     font-weight: 400 !important
 .textAudio__esp 
   color: #777777 !important
+.acordion__accion__btn--b
+  background-color: #FED947
+  border: 1px solid #FED947
+.tabs-a__tab
+  background-color: #E1E8FF
+.tarjeta.color-acento-botones--borde
+  background-color: #ACADE1
+  color: #12263F
+  border: 0
+.slyder-a__btn--sigt
+  background-color: #3C3FA7
+  background-image: url("../assets/componentes/arrow2.svg")
+  border: 1px solid #3C3FA7
+.slyder-a__btn--atrs
+  background-color: #3C3FA7
+  background-image: url("../assets/componentes/arrow2.svg")
+  border: 1px solid #3C3FA7
+.slyder-a__bullets__item--active
+  background-color: #3C3FA7
+  border-color: #3C3FA7
