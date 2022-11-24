@@ -305,7 +305,7 @@
                 p.text-center.colr <em>IT MUST</em>
                 p.text-center.colr <em>THEY MUST</em>
       
-      p <em>Now, we are going to practice the structure in use with some sentences: </em> / Ahora, vamos a practicar la estructura en uso con algunas oraciones:
+      p.mb-5.text-center <em>Now, we are going to practice the structure in use with some sentences: </em>/ Ahora, vamos a practicar la estructura en uso con algunas oraciones:
 
       .row.mb-5.justify-content-center
         .col-lg-5
@@ -318,21 +318,21 @@
       .row.mb-5
         .col-lg-4
           TraduccionT.color-acento-botones(:dialogo="dialogo6")(data-aos="flip-up")
-        .col-lg-8
+        .col-lg-4
           .tarjeta.bgr_4.p-4
             .row.justify-content-center.mb-3
-              .col-lg-6
-                .bgr_1.tarjeta.pt-2.px-2
-                  .row.justify-content-center
-                    .col-lg-8.mt-2
+              .col-lg-11
+                .bgr_1.tarjeta
+                  .row.justify-content-center.p-2
+                    .col-lg-9.d-flex.align-items-center
                       h4.mb-0 <em>Modal verbs negative form</em> 
-                    .col-lg-2
-                      Audio.color-acento-botones.m-auto.mb-3(
+                    .col-lg-2.d-flex.align-items-center
+                      Audio.color-acento-botones.m-auto(
                         :audio="require('@/assets/componentes/audios/tema1/15.mp3')"
                         @audio-hover="mostrarIndicadorAudio = false"
                       )
                         .indicador--click(v-if="mostrarIndicadorAudio")
-            SlyderF.mgb(columnas="col-lg-6 col-xl-6")
+            SlyderF.mgb(columnas="col-lg-12 col-xl-12")
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
                   :audio="require('@/assets/componentes/audios/tema1/16.mp3')"
@@ -375,8 +375,6 @@
                 p.text-center.colr <em>SHE MUSTN’T</em>
                 p.text-center.colr <em>IT MUSTN’T</em>
                 p.text-center.colr <em>THEY MUSTN’T</em>
-      
-      p <em>Now, we are going to practice the structure in use with some sentences: </em> / Ahora, vamos a practicar la estructura en uso con algunas oraciones:
 
       .row.mb-5.justify-content-center
         .col-lg-6
@@ -708,7 +706,7 @@
     
     Dialogo.color-primario(:dialogo="dialogo")
       template(#nombre-actividad) Arrastrar y Soltar
-      template(#titulo-actividad) Titulo de actividad - Completa la conversación.
+      template(#titulo-actividad) <em>Dialogue Technology and regrets</em> - Completa la conversación.
       template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.
     
     
