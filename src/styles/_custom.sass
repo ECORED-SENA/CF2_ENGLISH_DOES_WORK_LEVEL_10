@@ -180,6 +180,8 @@
       height: calc(100% + 4rem)
     @media ( max-width: $bp-max-md )
       top: -4%
+      left: 0
+      width: 100%
 .bg_grad-04
   position: relative
   .row, .slyder-f
@@ -226,6 +228,8 @@
       height: calc(100% + 4rem)
     @media ( max-width: $bp-max-md )
       top: -4%
+      width: calc(100% + 4rem)
+      left: -5%
 .bg_grad-07
   position: relative
   .row, p
@@ -295,6 +299,9 @@
     background-image: url("../assets/curso/tema1/fondo3.svg")
     background-repeat: no-repeat
     background-size: cover
+    @media ( max-width: $bp-max-md )
+      top: -2%
+      
 .bg_grad-12
   position: relative
   .row, .slyder-f
@@ -310,6 +317,8 @@
     background-image: url("../assets/curso/tema2/fondo1.svg")
     background-repeat: no-repeat
     background-size: cover
+    @media ( max-width: $bp-max-md )
+      top: -2%
 .bg_grad-13
   position: relative
   .row, p
@@ -324,10 +333,12 @@
     background-color: #FFF0F1
     border-radius: 20px
     @media ( max-width: $bp-max-lg )
-      top: -8%    
-      height: calc(100% + 4rem)
+      top: -1%    
+      height: calc(100% + 1rem)
     @media ( max-width: $bp-max-md )
-      top: -4%
+      top: -2%
+      left: 0
+      width: 100%
 .bg_grad-14
   position: relative
   .bgr_10
@@ -392,18 +403,20 @@
       height: calc(100% + 4rem)
     @media ( max-width: $bp-max-md )
       top: -4%
+      left: -5%
+      width: calc(100% + 4rem)
 //POSICION EN PANTALLA//
 .pst
   position: absolute
-  top: -8px
+  top: -20%
   right: -23px
   width: 83px
   @media ( max-width: $bp-max-lg )
     top: -15%
-    left: -8%
+    left: 90%
   @media ( max-width: $bp-max-md )
-    top: -20%
-    left: -3%
+    top: -7%
+    left: 91%
   @media ( max-width: $bp-max-xs )
     top: -12%
     left: -1%
@@ -413,11 +426,11 @@
     left: 25%
     width: 83px
     @media ( max-width: $bp-max-lg )
-      bottom: -15%
-      left: -8%
+      bottom: 0%
+      left: 7%
     @media ( max-width: $bp-max-md )
-      bottom: -20%
-      left: -3%
+      bottom: -3%
+      left: -6%
     @media ( max-width: $bp-max-xs )
       bottom: -12%
       left: -1%
@@ -454,3 +467,5 @@
 .slyder-a__bullets__item--active
   background-color: #3C3FA7
   border-color: #3C3FA7
+.horizontal-scroll
+  align-items: stretch !important

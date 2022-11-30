@@ -10,7 +10,7 @@
     .bg_grad-04
       .bg_grad-05
         .row.mb-5
-          .col-lg-4
+          .col-lg-4(data-aos="fade-right")
             figure.d-flex.justify-content-center
               img.w-auto(src="@/assets/curso/tema1/1.svg", alt="alt")
           .col-lg-8
@@ -101,14 +101,14 @@
         .row.justify-content-center.mb-5(data-aos="flip-up")
           .col-lg-10
             .tarjeta.bgr_2.p-3
-              .row.d-flex.align-items-center
+              .row.d-flex.align-items-center.justify-content-center
                 .col-lg-2.mb-3.mb-lg-0
                   figure.d-flex.justify-content-center
                     img.w-auto(src="@/assets/curso/tema1/9.svg", alt="alt")
-                .col-lg-7.mb-3.mb-lg-0
+                .col-lg-10.col-xl-5.mb-3.mb-xl-0
                   p.mb-0.colr <em>The topic of technology has a lot of words that you can use according to your profession and personal life. Please, check the next web to increase the vocabulary: </em> 
                     span.colr_1 / El tema de la tecnología tiene muchas palabras que puede usar de acuerdo con su profesión y vida personal. Por favor, revise la siguiente web para incrementar su vocabulario.
-                .col-lg-3
+                .col-lg-8.col-xl-3
                   a.anexo(href="https://www.ieltsadvantage.com/2015/04/21/technology-vocabulary/" target="_blank")
                     .anexo__icono
                       img(src="@/assets/template/icono-link.svg")
@@ -120,7 +120,7 @@
 
     .bg_grad-06
       .row.justify-content-center
-        .col-lg-3
+        .col-lg-3(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema1/10.png", alt="alt")
         .col-lg-7.d-flex.align-items-center
@@ -139,7 +139,7 @@
     .row.mb-5
       .col-lg-8
         TraduccionT.color-acento-botones(:dialogo="dialogo2")(data-aos="flip-up")
-      .col-lg-4
+      .col-lg-4(data-aos="fade-left")
         figure.d-flex.justify-content-center
           img.w-auto(src="@/assets/curso/tema1/12.png", alt="alt")
     
@@ -237,7 +237,7 @@
                         p <em>strong likelihood</em>
     
     .row.mb-5.justify-content-center
-      .col-lg-2
+      .col-lg-2.mb-3.mb-lg-0
         figure.d-flex.justify-content-center
           img.w-auto(src="@/assets/curso/tema1/13.svg", alt="alt")
       .col-lg-8 
@@ -253,8 +253,8 @@
               .col-lg-6
                 .bgr_1.tarjeta.pt-2.px-2
                   .row.justify-content-center
-                    .col-lg-8.mt-2
-                      h4.mb-0 <em>Modal verbs conjugation</em> 
+                    .col-lg-8.mt-2.mb-3.mb-lg-0
+                      h4.mb-0.text-center <em>Modal verbs conjugation</em> 
                     .col-lg-2
                       Audio.color-acento-botones.m-auto.mb-3(
                         :audio="require('@/assets/componentes/audios/tema1/10.mp3')"
@@ -308,23 +308,23 @@
       p.mb-5.text-center <em>Now, we are going to practice the structure in use with some sentences: </em>/ Ahora, vamos a practicar la estructura en uso con algunas oraciones:
 
       .row.mb-5.justify-content-center
-        .col-lg-5
+        .col-lg-5.col-xl-5.mb-3.mb-lg-0(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema1/14.svg", alt="alt")
-        .col-lg-3
+        .col-lg-5.col-xl-3.d-flex.justify-content-center
           TraduccionAudio.color-acento-botones(:dialogo="dialogo5")(data-aos="flip-up")
                     
     .bg_grad-08
       .row.mb-5
         .col-lg-4
           TraduccionT.color-acento-botones(:dialogo="dialogo6")(data-aos="flip-up")
-        .col-lg-4
+        .col-lg-4.mb-3.mb-lg-0
           .tarjeta.bgr_4.p-4
             .row.justify-content-center.mb-3
               .col-lg-11
                 .bgr_1.tarjeta
                   .row.justify-content-center.p-2
-                    .col-lg-9.d-flex.align-items-center
+                    .col-lg-9.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
                       h4.mb-0 <em>Modal verbs negative form</em> 
                     .col-lg-2.d-flex.align-items-center
                       Audio.color-acento-botones.m-auto(
@@ -375,12 +375,68 @@
                 p.text-center.colr <em>SHE MUSTN’T</em>
                 p.text-center.colr <em>IT MUSTN’T</em>
                 p.text-center.colr <em>THEY MUSTN’T</em>
-
+        .col-lg-4
+          .tarjeta.bgr_4.p-4
+            .row.justify-content-center.mb-3
+              .col-lg-11
+                .bgr_1.tarjeta
+                  .row.justify-content-center.p-2
+                    .col-lg-9.d-flex.align-items-center.justify-content-center.mb-3.mb-lg-0
+                      h4.mb-0 <em>Modal verbs question form</em> 
+                    .col-lg-2.d-flex.align-items-center
+                      Audio.color-acento-botones.m-auto(
+                        :audio="require('@/assets/componentes/audios/tema1/15.mp3')"
+                        @audio-hover="mostrarIndicadorAudio = false"
+                      )
+                        .indicador--click(v-if="mostrarIndicadorAudio")
+            SlyderF.mgb(columnas="col-lg-12 col-xl-12")
+              .tarjeta.bgr_1.p-3
+                Audio.color-acento-botones.m-auto.mb-3(
+                  :audio="require('@/assets/componentes/audios/tema1/16.mp3')"
+                  @audio-hover="mostrarIndicadorAudio = false"
+                )
+                  .indicador--click(v-if="mostrarIndicadorAudio")
+                p.text-center.text-bold.colr <em>COULD</em>
+                p.text-center.colr <em>COULD I ?</em>
+                p.text-center.colr <em>COULD YOU ?</em>
+                p.text-center.colr <em>COULD WE ?</em>
+                p.text-center.colr <em>HE COULD I ?</em>
+                p.text-center.colr <em>SHE COULD I ?</em>
+                p.text-center.colr <em>IT COULD I ?</em>
+                p.text-center.colr <em>THEY COULD I ?</em>
+              .tarjeta.bgr_1.p-3
+                Audio.color-acento-botones.m-auto.mb-3(
+                  :audio="require('@/assets/componentes/audios/tema1/17.mp3')"
+                  @audio-hover="mostrarIndicadorAudio = false"
+                )
+                  .indicador--click(v-if="mostrarIndicadorAudio")
+                p.text-center.text-bold.colr <em>SHOULD + NOT</em>
+                p.text-center.colr <em>I  SHOULDN’T</em>
+                p.text-center.colr <em>YOU SHOULDN’T</em>
+                p.text-center.colr <em>WE SHOULDN’T</em>
+                p.text-center.colr <em>HE SHOULDN’T</em>
+                p.text-center.colr <em>SHE SHOULDN’T</em>
+                p.text-center.colr <em>IT SHOULDN’T</em>
+                p.text-center.colr <em>THEY SHOULDN’T</em>
+              .tarjeta.bgr_1.p-3
+                Audio.color-acento-botones.m-auto.mb-3(
+                  :audio="require('@/assets/componentes/audios/tema1/18.mp3')"
+                  @audio-hover="mostrarIndicadorAudio = false"
+                )
+                  .indicador--click(v-if="mostrarIndicadorAudio")
+                p.text-center.text-bold.colr <em>MUST + NOT</em>
+                p.text-center.colr <em>I MUSTN’T</em>
+                p.text-center.colr <em>YOU MUSTN’T</em>
+                p.text-center.colr <em>WE MUSTN’T</em>
+                p.text-center.colr <em>HE MUSTN’T</em>
+                p.text-center.colr <em>SHE MUSTN’T</em>
+                p.text-center.colr <em>IT MUSTN’T</em>
+                p.text-center.colr <em>THEY MUSTN’T</em>
       .row.mb-5.justify-content-center
-        .col-lg-6
+        .col-lg-6.col-xl-6.mb-3.mb-lg-0(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema1/15.svg", alt="alt")
-        .col-lg-4
+        .col-lg-6.col-xl-4.d-flex.justify-content-center
           TraduccionAudio.color-acento-botones(:dialogo="dialogo7")(data-aos="flip-up")
     
     .bg_grad-09
@@ -393,7 +449,7 @@
               .col-lg-6
                 .bgr_1.tarjeta.pt-2.px-2
                   .row.justify-content-center
-                    .col-lg-9.mt-2
+                    .col-lg-9.mt-2.d-flex.justify-content-center.mb-3.mb-lg-0
                       h4.mb-0 <em>Modal verbs verb + verb rule</em> 
                     .col-lg-2
                       Audio.color-acento-botones.m-auto.mb-3(
@@ -448,10 +504,10 @@
       p <em>Now, we are going to practice the structure in use with some sentences: </em> / Ahora, vamos a practicar la estructura en uso con algunas oraciones:
 
       .row.mb-5.justify-content-center
-        .col-lg-6
+        .col-lg-6.col-xl-6.mb-3.mb-lg-0(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema1/16.svg", alt="alt")
-        .col-lg-4
+        .col-lg-5.col-xl-4.d-flex.justify-content-center
           TraduccionAudio.color-acento-botones(:dialogo="dialogo9")(data-aos="flip-up")
     
     .bg_grad-10
@@ -464,7 +520,7 @@
               .col-lg-6
                 .bgr_1.tarjeta.pt-2.px-2
                   .row.justify-content-center
-                    .col-lg-7.mt-2
+                    .col-lg-7.mt-2.d-flex.justify-content-center.mb-3.mb-lg-0
                       h4.mb-0 <em>Modal Verb HAVE  TO</em> 
                     .col-lg-2
                       Audio.color-acento-botones.m-auto.mb-3(
@@ -479,7 +535,7 @@
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.text-bold.colr <em>COULD</em>
+                p.text-center.text-bold.colr <em>CONJUGATION</em>
                 p.text-center.colr <em>I HAVE TO…</em>
                 p.text-center.colr <em>YOU HAVE TO…</em>
                 p.text-center.colr <em>WE HAVE TO…</em>
@@ -493,7 +549,7 @@
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.text-bold.colr <em>SHOULD</em>
+                p.text-center.text-bold.colr <em>NEGATIVE FORM</em>
                 p.text-center.colr <em>I DON’T HAVE TO…</em>
                 p.text-center.colr <em>YOU DON’T HAVE TO…</em>
                 p.text-center.colr <em>WE DON’T HAVE TO…</em>
@@ -507,7 +563,7 @@
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.text-bold.colr <em>MUST</em>
+                p.text-center.text-bold.colr <em>QUESTION FORM</em>
                 p.text-center.colr <em>DO I HAVE TO… ?</em>
                 p.text-center.colr <em>DO YOU HAVE TO… ?</em>
                 p.text-center.colr <em>DO WE HAVE TO… ?</em>
@@ -519,10 +575,10 @@
       p <em>Now, we are going to practice the structure in use with some sentences: </em> / Ahora, vamos a practicar la estructura en uso con algunas oraciones:
 
       .row.mb-5.justify-content-center
-        .col-lg-4
+        .col-lg-6.col-xl-4.order-md-2.order-lg-1(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema1/17.svg", alt="alt")
-        .col-lg-4
+        .col-lg-6.col-xl-4.mb-3.mb-lg-0.d-flex.justify-content-center.order-md-1.order-lg-2
           TraduccionAudio.color-acento-botones(:dialogo="dialogo11")(data-aos="flip-up")
                         
     TraduccionT.color-acento-botones(:dialogo="dialogo12").mb-5(data-aos="flip-up")    
@@ -579,14 +635,14 @@
                 li 
                   i.fas.fa-sun.colr_2
                   | <em>He should have bought the blue shirt.  </em> 
-      .col-lg-4
+      .col-lg-4(data-aos="fade-left")
         figure.d-flex.justify-content-center
-          img.w-auto(src="@/assets/curso/tema1/18.png", alt="alt")
+          img.w-auto.d-none.d-lg-flex(src="@/assets/curso/tema1/18.png", alt="alt")
       
     .row.mb-5
-      .col-lg-4
+      .col-lg-4(data-aos="fade-right")
         figure.d-flex.justify-content-center
-          img.w-auto(src="@/assets/curso/tema1/19.png", alt="alt")
+          img.w-auto.d-none.d-lg-flex(src="@/assets/curso/tema1/19.png", alt="alt")
       .col-lg-8
         AcordionA(tipo="b" clase-tarjeta="bgr_7 tarjeta")
           div(titulo="<em>Must have + past participle verb</em>").bgr_1.tarjeta.p-4
@@ -647,7 +703,7 @@
     .bg_grad-11
       TraduccionT.color-acento-botones(:dialogo="dialogo13")(data-aos="flip-up")
       .row.justify-content-center.mb-5
-        .col-lg-3
+        .col-md-8.col-lg-3.mb-3.mb-lg-0
           .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema1/20.png')})`}" style='height: 500px').pst_2
             .tarjeta.bgr_1.p-3
               Audio.color-acento-botones.m-auto.mb-3(
@@ -656,7 +712,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center <em>Technology could have been more useful in schools if the rules to use mobile were clearer and stricter.</em>
-        .col-lg-3
+        .col-md-8.col-lg-3.mb-3.mb-lg-0
           .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema1/21.png')})`}" style='height: 500px').pst_2
             .tarjeta.bgr_1.p-3
               Audio.color-acento-botones.m-auto.mb-3(
@@ -665,7 +721,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center <em>Apps would be more useful if parents, teachers and students could communicate effectively.</em>
-        .col-lg-3
+        .col-md-8.col-lg-3
           .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema1/22.png')})`}" style='height: 500px').pst_2
             .tarjeta.bgr_1.p-3
               Audio.color-acento-botones.m-auto.mb-3(
@@ -678,7 +734,7 @@
     separador
 
     #t_1_2.titulo-segundo.color-acento-contenido(data-aos="fade-right")
-      h2 1.2 <em>Modals</em>
+      h2 1.2 <em>Predictions</em>
     
     .row.mb-5
       .col-lg-7
@@ -704,7 +760,7 @@
     p.colr.mb-5 <em>Now, we are going to practice. Listen to each audio, then complete the missing word and review again if it is necessary. Let’s go: </em>
       span.colr_1 / Ahora, vamos a practicar. Escuche cada audio, luego complete la palabra que falta y vuelva a revisar si es necesario. Vamos:
     
-    Dialogo.color-primario(:dialogo="dialogo")
+    Dialogo.color-primario(:dialogo="dialogo")(data-aos="zoom-in")
       template(#nombre-actividad) Arrastrar y Soltar
       template(#titulo-actividad) <em>Dialogue Technology and regrets</em> - Completa la conversación.
       template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.
@@ -766,7 +822,7 @@ export default {
     dialogo5: [
       {
         textoIng:
-          '<em><b>Structure in use</b><br><br>I could go to the party but I do not want to.<br>She should be the best student in the class.<br>They must practice twice a week.</em>',
+          '<em><b>Structure in use</b><br><br>I could go to the party but i do not want to.<br>She should be the best student in the class.<br>They must practice twice a week.</em>',
         textoEsp:
           'Yo pude ir a la fiesta, pero no quise.<br>Ella debería ser la mejor estudiante en la clase.<br>Ellos deben practicar dos veces a la semana.',
         audio: require('@/assets/componentes/audios/tema1/14.mp3'),
@@ -817,10 +873,10 @@ export default {
     dialogo11: [
       {
         textoIng:
-          '<em><b>Structure in use</b><br><br>They have to study hard.<br>She has to be quiet.<br>You don’t have to pay for that.<br>He doesn’t have to wear a uniform.<br>Do we have to work together?<br>Does it have to work here?</em>',
+          '<em><b>Structure in use</b><br><br>They have to study hard.<br>The dog has to be quiet<br>You don’t have to pay for that.<br>He doesn’t have to wear a uniform.<br>Do we have to work together?<br>Does it have to work here?</em>',
         textoEsp:
-          'Tienen que estudiar duro.<br>Ella tiene que estar callada.<br>No tienes que pagar por eso.<br>Él no tiene que llevar uniforme.<br>¿Tenemos que trabajar juntos?<br>¿Tiene que funcionar aquí?',
-        audio: require('@/assets/componentes/audios/audio-ej.mp3'),
+          'Tienen que estudiar duro.<br>El perro debe estar callado.<br>No tienes que pagar por eso.<br>Él no tiene que llevar uniforme.<br>¿Tenemos que trabajar juntos?<br>¿Tiene que funcionar aquí?',
+        audio: require('@/assets/componentes/audios/tema1/44.mp3'),
       },
     ],
     dialogo12: [

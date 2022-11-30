@@ -11,13 +11,13 @@
       .row.mb-5
         .col-lg-8
           TraduccionT.color-acento-botones(:dialogo="dialogo1")(data-aos="flip-up")
-        .col-lg-4
+        .col-lg-4(data-aos="fade-left")
           figure.d-flex.justify-content-center.mb-3
             img.w-auto(src="@/assets/curso/tema3/1.svg", alt="alt")
       
       .row.mb-5.justify-content-center
         .col-lg-10
-           SlyderF.mgb(columnas="col-lg-6 col-xl-4")
+           SlyderF.mgb(columnas="col-md-6 col-xl-4")
             .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema3/2.png')})`}" style='height: 500px').pst_2
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
@@ -37,11 +37,11 @@
             .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema3/4.png')})`}" style='height: 500px').pst_2
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
-                  :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                  :audio="require('@/assets/componentes/audios/tema3/3.mp3')"
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.colr <em> Use direct questions to explore people´s opinion about particular new topics, in this way you can have control of the direction of the conversation.</em>
+                p.text-center.colr <em> Use direct questions to explore people’s opinion about particular new topics, in this way you can have control of the direction of the conversation.</em>
             .tarjeta.p-4.d-flex.align-items-end.justify-content-center(:style="{'background-image': `url(${require('@/assets/curso/tema3/5.png')})`}" style='height: 500px').pst_2
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
@@ -92,21 +92,21 @@
                 p.text-center.colr <em>A transition has to feel and sound natural, the conversation needs to continue with a natural flow, without unnatural breaks. </em>
       .bg_grad-17
         .row.mb-5.justify-content-center
-          .col-lg-3
+          .col-lg-3(data-aos="fade-right")
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema3/11.svg", alt="alt")  
           .col-lg-7
-            p.mt-5.colr <em>Learn how to switch topics in English. Sometimes, we are in a conversation and we need to change the subject. So it is necessary to practice to learn how to change the topic and talk about something else smoothly, so that the listener won't even notice you changed the subject! Listen and learn:</em>
+            p.mt-5.mt-md-0.colr <em>Learn how to switch topics in English. Sometimes, we are in a conversation and we need to change the subject. So it is necessary to practice to learn how to change the topic and talk about something else smoothly, so that the listener won't even notice you changed the subject! Listen and learn:</em>
             .row.bgr_4.p-4.tarjeta
-              .col-lg-4.d-flex.align-items-center
+              .col-lg-4.d-flex.align-items-center.justify-content-center.order-2.order-lg-1.mb-3.mb-lg-0
                 p.mb-0.text-white.text-bold <em>Play the audio then download the transcript.</em>
-              .col-lg-7
+              .col-lg-7.order-3.order-lg-2
                 a.anexo(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
                   .anexo__icono
                     img(src="@/assets/template/icono-pdf.svg")
                   .anexo__texto
                     p.mb-0 Anexo. <em>How_to_Switch_Topics_in_English</em>
-              .col-lg-1.d-flex.align-items-center
+              .col-lg-1.d-flex.align-items-center.order-1.order-lg-3.mb-3.mb-lg-0
                 Audio.color-acento-botones.m-auto(
                   :audio="require('@/assets/componentes/audios/tema3/10.mp3')"
                   @audio-hover="mostrarIndicadorAudio = false"
@@ -116,7 +116,7 @@
     p.colr <em>Now, we are going to practice. Listen to each audio, then complete the missing word and review again if it is necessary. Let’s go: </em>
       span.colr_1 / Ahora, vamos a practicar. Escuche cada audio, luego complete la palabra que falta y vuelva a revisar si es necesario. Vamos:
 
-    Dialogo.color-primario(:dialogo="dialogo")
+    Dialogo.color-primario(:dialogo="dialogo")(data-aos="zoom-in")
       template(#nombre-actividad) Arrastrar y Soltar
       template(#titulo-actividad) <em>Switching the opinion</em> - Completa la conversación.
       template(#descripcion-actividad) Arrastra y suelta cada una de las palabras en el orden correcto.

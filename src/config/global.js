@@ -1,6 +1,6 @@
 export default {
   global: {
-    componenteFormativo: '<em>I would like to ...</em><br> “Me gustaría …”',
+    componenteFormativo: '<em>I would like to...</em><br> “Me gustaría...”',
     descripcionCurso:
       'Este componente va a ser la introducción al vocabulario sobre tecnología, el uso de modales, la forma de predicciones, el lenguaje informal, la comunicación con gran pronunciación, el habla y la forma de cambiar de tema en una conversación.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
@@ -270,20 +270,31 @@ export default {
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
-        cargo: 'Producción audiovisual',
-        centro:
-          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
-      },
-      {
         nombre: 'Carlos Andrés Díaz Pinto',
         cargo: 'Desarrollo front-end',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
-        cargo: 'Validación de diseño y contenido',
+        nombre: 'Zuleidy María Ruíz Torres',
+        cargo: 'Revisión de guion audiovisual',
+        centro: 'Centro de Comercio y Servicios -  Regional Tolima',
+      },
+      {
+        nombre: 'María Carolina Tamayo López',
+        cargo: 'Locución',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Laura Ximena Hurtado Villalba',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Lina Marcela Pérez Manchego',
+        cargo: 'Validación de contenido y audiovisual',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },

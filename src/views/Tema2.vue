@@ -9,7 +9,7 @@
     
     .bg_grad-12
       .row.mb-5
-        .col-lg-4
+        .col-lg-4.mb-3.mb-lg-0(data-aos="fade-right")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema2/1.svg", alt="alt")
         .col-lg-8
@@ -35,23 +35,23 @@
                   p.text-bold.mb-0 <em>don’t = do not</em>
                   p.text-bold.mb-0 <em>hadn’t = had not</em>
                   p.text-bold.mb-0 <em>hasn’t =  has not</em>
-        .col-lg-4
+        .col-lg-4(data-aos="fade-left")
           figure.d-flex.justify-content-center
-            img.w-auto(src="@/assets/curso/tema2/2.png", alt="alt")
+            img.w-auto.d-none.d-lg-flex(src="@/assets/curso/tema2/2.png", alt="alt")
       
-      .row.justify-content-center
-        .col-lg-2
+      .row.justify-content-center.mb-3.mb-lg-0
+        .col-lg-2.mb-3.mb-lg-0
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema2/3.svg", alt="alt")
-        .col-lg-5
+        .col-lg-5.mb-3.mb-lg-0
           p.mb-0 <em>One contraction that is not on the above list is “it’s.” It is useful to note that “it’s,” a contraction, is often confused with “its,” a possessive pronoun. Remember:</em>
         .col-lg-3
-          h3.bgr_9.p-2.mb-2 <em>it’s = it is</em>
+          h3.bgr_9.p-2.mb-2  <em>it’s = it is</em>
           h3.bgr_9.p-2 <em>its = possessive pronoun</em>
       
       .bg_grad-13
         .row.mb-5.justify-content-center
-          .col-lg-3
+          .col-lg-3(data-aos="fade-right")
             figure.d-flex.justify-content-center
               img.w-auto(src="@/assets/curso/tema2/4.png", alt="alt")
           .col-lg-7
@@ -66,25 +66,42 @@
           div(titulo="<em>Phrasal verbs</em>").bgr_1.tarjeta.p-4
             p.colr <em>Phrasal verbs are especially common in daily informal conversation. Using phrasal verbs in your informal speech makes it sound natural. There are phrasal verbs that can be used in formal and informal writing:</em>
             .row.bgr_8.p-3
-              .col-lg-5
-                p.colr.text-bold.mb-0 <em>Phrasal verb</em>
-                p.colr.text-bold.mb-0 <em>Informal – Formal</em>
-                p.colr.text-bold.mb-0 <em>Ask out – Invite</em>
-                p.colr.text-bold.mb-0 <em>Break out – Erupt</em>
-                p.colr.text-bold.mb-0 <em>Bring up – Mention (a topic / event)</em>
-                p.colr.text-bold.mb-0 <em>Call on – Visit</em>
-                p.colr.text-bold.mb-0 <em>Check out – Investigate</em>
-              .col-lg-2
+              .col-xl-5.order-lg-2.order-xl-1.mb-3.mb-xl-0
+                table
+                  thead
+                    tr.text-center
+                      th.bgr_5.bgr_4 <em>Phrasal verb</em>
+                      th.bgr_5.bgr_2 <em>Verb</em>
+                    tr.text-center
+                      th.bgr_5.bgr_4 <em>Informal</em>
+                      th.bgr_5.bgr_2 <em>Formal</em>
+                  tbody.text-center.bgr_1
+                    tr
+                      td.bgr_5 <em>Ask out</em>
+                      td.bgr_5 <em>Invite</em>  
+                    tr
+                      td.bgr_5 <em>Break out</em>
+                      td.bgr_5 <em>Erupt</em>
+                    tr
+                      td.bgr_5 <em>Bring up</em>
+                      td.bgr_5 <em>Mention (a topic / event)</em>
+                    tr
+                      td.bgr_5 <em>Call on</em>
+                      td.bgr_5 <em>Visit</em>
+                    tr
+                      td.bgr_5 <em>Check out</em>
+                      td.bgr_5 <em>Investigate</em>
+              .col-xl-2.order-lg-1.order-xl-2.mb-3.mb-xl-0
                 Audio.color-secundario.m-auto(
                     :audio="require('@/assets/componentes/audios/tema2/4.mp3')"
                     @audio-hover="mostrarIndicadorAudio = false"
                   )
                     .indicador--click(v-if="mostrarIndicadorAudio")
-              .col-lg-5
+              .col-xl-5.order-lg-3.order-xl-3
                 figure.d-flex.justify-content-center
                   img.w-auto(src="@/assets/curso/tema2/6.svg", alt="alt")
           .row(titulo="<em>Slang and colloquialism</em>").bgr_1.tarjeta.p-4
-            .col-lg-8.bgr_8.p-3
+            .col-xl-8.bgr_8.p-3.mb-3.mb-xl-0
               p.colr <em>It refers to the informal use of language consisting of words, phrases and aphorisms used by common people. See it as a form of everyday use of language, commonplace parlance in other words, which is more appropriate in the conversational form or the speech form.</em>
               p.colr <em>It’s important to keep in mind that colloquial language is more formal than slang as it does not come across as offensive as the latter.</em>
               .row
@@ -102,12 +119,12 @@
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                       .indicador--click(v-if="mostrarIndicadorAudio")
-            .col-lg-4
+            .col-xl-4
               figure.d-flex.justify-content-center
                 img.w-auto(src="@/assets/curso/tema2/7.svg", alt="alt") 
-      .col-lg-4
+      .col-lg-4(data-aos="fade-left")
         figure.d-flex.justify-content-center
-          img.w-auto(src="@/assets/curso/tema2/5.png", alt="alt")  
+          img.w-auto.d-none.d-lg-flex(src="@/assets/curso/tema2/5.png", alt="alt")  
 
     separador
 
@@ -115,7 +132,7 @@
       h2 2.1 <em>Communicating with great pronunciation</em>    
     
     .bg_grad-14
-      .row.justify-content-center.mb-5
+      .row.justify-content-center.mb-5(data-aos="zoom-in")
         .col-lg-10
           .bgr_10.tarjeta.p-4
             figure.d-flex.justify-content-center
@@ -187,13 +204,13 @@
       .row.mb-5
         .col-lg-8
           TraduccionT.color-acento-botones(:dialogo="dialogo6")(data-aos="flip-up")
-        .col-lg-4
+        .col-lg-4(data-aos="fade-left")
           figure.d-flex.justify-content-center
             img.w-auto(src="@/assets/curso/tema2/9.svg", alt="alt")
       
       .bgr_11.p-4
         SlyderF(columnas="col-lg-6 col-xl-4")
-          .tarjeta.bgr_12.p-4
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/11.svg", alt="alt")
             .bgr_1.tarjeta.p-4
@@ -203,7 +220,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center.colr <em>Listening and reading are good ways to improve your vocabulary bank, this will give you a lot of options of words at the moment of talking so you don’t have to pause when you think about the correct word to say.</em>
-          .tarjeta.bgr_12.p-4
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/12.svg", alt="alt")
             .bgr_1.tarjeta.p-4
@@ -213,7 +230,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center.colr <em>Prepare in advance the vocabulary of the topic that you will talk about. In this way, you can master the topic and be fluent in the topic conversations you will be involved in.</em>
-          .tarjeta.bgr_12.p-4
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/13.svg", alt="alt")
             .bgr_1.tarjeta.p-4
@@ -223,7 +240,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center.colr <em>Learn phrases rather than single words. When you learn or memorize complete phrases you can use them as model samples at the moment of speaking, this way you don’t have to worry about making grammar mistakes because you only need to modify a few things in the phrases in order to say what you need in that moment. </em>
-          .tarjeta.bgr_12.p-4
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/14.svg", alt="alt")
             .bgr_1.tarjeta.p-4
@@ -232,8 +249,8 @@
                 @audio-hover="mostrarIndicadorAudio = false"
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
-              p.text-center.colr <em>Listen, memorize, and repeat English songs to improve fluency. The music will help you learn and practice the rhythm of some English Words. As long as learning pronunciation.</em>
-          .tarjeta.bgr_12.p-4
+              p.text-center.colr <em>Listen, memorize, and repeat English songs to improve fluency. The music will help you learn and practice the rhythm of some English words, along with learning pronunciation.</em>
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/15.svg", alt="alt")
             .bgr_1.tarjeta.p-4
@@ -243,7 +260,7 @@
               )
                 .indicador--click(v-if="mostrarIndicadorAudio")
               p.text-center.colr <em>Memorize short stories, jokes, or recipes. This gives you a feeling of sureness when you are retelling information, so every time that you repeat it you will be getting better and better.</em>
-          .tarjeta.bgr_12.p-4
+          .tarjeta.bgr_12.p-4.h-100
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema2/16.svg", alt="alt")
             .bgr_1.tarjeta.p-4
