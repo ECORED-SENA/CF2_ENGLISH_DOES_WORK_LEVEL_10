@@ -96,12 +96,12 @@
             figure.d-flex.justify-content-center.mb-3
               img.w-auto(src="@/assets/curso/tema3/11.svg", alt="alt")  
           .col-lg-7
-            p.mt-5.mt-md-0.colr <em>Learn how to switch topics in English. Sometimes, we are in a conversation and we need to change the subject. So it is necessary to practice to learn how to change the topic and talk about something else smoothly, so that the listener won't even notice you changed the subject! Listen and learn:</em>
+            p.mt-lg-5.mt-0.colr <em>Learn how to switch topics in English. Sometimes, we are in a conversation and we need to change the subject. So it is necessary to practice to learn how to change the topic and talk about something else smoothly, so that the listener won't even notice you changed the subject! Listen and learn:</em>
             .row.bgr_4.p-4.tarjeta
               .col-lg-4.d-flex.align-items-center.justify-content-center.order-2.order-lg-1.mb-3.mb-lg-0
                 p.mb-0.text-white.text-bold <em>Play the audio then download the transcript.</em>
               .col-lg-7.order-3.order-lg-2
-                a.anexo(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+                a.anexo(:href="obtenerLink('downloads/anexo2.pdf')" target="_blank")
                   .anexo__icono
                     img(src="@/assets/template/icono-pdf.svg")
                   .anexo__texto

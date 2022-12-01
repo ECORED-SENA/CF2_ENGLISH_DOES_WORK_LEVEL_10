@@ -177,7 +177,7 @@
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
                 p.text-bold.text-center.colr_3 <em>Face your fear</em>
-                p.text-center <em>Face your fear of making mistakes. It is important you take yourself to the edge and make mistakes in front of other people is a good option, don´t forget to ask other people to correct you.</em>
+                p.text-center <em>Face your fear of making mistakes. It is important to take yourself to the edge, and to make mistakes in front of other people is a good option, don’t forget to ask other people to correct you.</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
                   :audio="require('@/assets/componentes/audios/tema2/11.mp3')"
@@ -185,7 +185,7 @@
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
                 p.text-bold.text-center.colr_3 <em>Listen to yourself</em>
-                p.text-center <em>Listen to yourself as a way to identify your own pronunciation mistakes is a good way to start correcting them. Use any audio recording device to record your own voice, then listen to yourself and identify errors.</em>
+                p.text-center <em>Listening to yourself as a way to identify your own pronunciation mistakes is a good way to start correcting them. Use any audio recording device to record your own voice, then listen to yourself and identify errors.</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
                   :audio="require('@/assets/componentes/audios/tema2/12.mp3')"
@@ -318,7 +318,7 @@ export default {
     dialogo4: [
       {
         textoIng:
-          '<em><b>Contractions</b><br><br>In informal language, it is so common to use contractions as part of the language. Let’s see some of them. Here are some common contractions and the groups of words that they represent.</em>',
+          '<em><b>Contractions</b><br><br>In informal language, it is very common to use contractions as part of the language. Let’s see some of them. Here are some common contractions and the groups of words that they represent.</em>',
         textoEsp:
           'En el lenguaje informal, es muy común utilizar las contracciones como parte del lenguaje. Veamos algunas de ellas. Aquí hay algunas contracciones comunes y los grupos de palabras que representan.',
         audio: require('@/assets/componentes/audios/tema2/3.mp3'),

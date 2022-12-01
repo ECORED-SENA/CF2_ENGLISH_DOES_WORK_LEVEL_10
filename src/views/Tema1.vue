@@ -385,53 +385,53 @@
                       h4.mb-0 <em>Modal verbs question form</em> 
                     .col-lg-2.d-flex.align-items-center
                       Audio.color-acento-botones.m-auto(
-                        :audio="require('@/assets/componentes/audios/tema1/15.mp3')"
+                        :audio="require('@/assets/componentes/audios/tema1/45.mp3')"
                         @audio-hover="mostrarIndicadorAudio = false"
                       )
                         .indicador--click(v-if="mostrarIndicadorAudio")
             SlyderF.mgb(columnas="col-lg-12 col-xl-12")
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
-                  :audio="require('@/assets/componentes/audios/tema1/16.mp3')"
+                  :audio="require('@/assets/componentes/audios/tema1/46.mp3')"
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
                 p.text-center.text-bold.colr <em>COULD</em>
-                p.text-center.colr <em>COULD I ?</em>
-                p.text-center.colr <em>COULD YOU ?</em>
-                p.text-center.colr <em>COULD WE ?</em>
-                p.text-center.colr <em>HE COULD I ?</em>
-                p.text-center.colr <em>SHE COULD I ?</em>
-                p.text-center.colr <em>IT COULD I ?</em>
-                p.text-center.colr <em>THEY COULD I ?</em>
+                p.text-center.colr <em>COULD I?</em>
+                p.text-center.colr <em>COULD YOU?</em>
+                p.text-center.colr <em>COULD WE?</em>
+                p.text-center.colr <em>COULD HE?</em>
+                p.text-center.colr <em>COULD SHE?</em>
+                p.text-center.colr <em>COULD IT?</em>
+                p.text-center.colr <em>COULD THEY?</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
-                  :audio="require('@/assets/componentes/audios/tema1/17.mp3')"
+                  :audio="require('@/assets/componentes/audios/tema1/47.mp3')"
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.text-bold.colr <em>SHOULD + NOT</em>
-                p.text-center.colr <em>I  SHOULDN’T</em>
-                p.text-center.colr <em>YOU SHOULDN’T</em>
-                p.text-center.colr <em>WE SHOULDN’T</em>
-                p.text-center.colr <em>HE SHOULDN’T</em>
-                p.text-center.colr <em>SHE SHOULDN’T</em>
-                p.text-center.colr <em>IT SHOULDN’T</em>
-                p.text-center.colr <em>THEY SHOULDN’T</em>
+                p.text-center.text-bold.colr <em>SHOULD</em>
+                p.text-center.colr <em>SHOULD I?</em>
+                p.text-center.colr <em>SHOULD YOU?</em>
+                p.text-center.colr <em>SHOULD WE?</em>
+                p.text-center.colr <em>SHOULD HE?</em>
+                p.text-center.colr <em>SHOULD SHE?</em>
+                p.text-center.colr <em>SHOULD IT?</em>
+                p.text-center.colr <em>SHOULD THEY?</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
-                  :audio="require('@/assets/componentes/audios/tema1/18.mp3')"
+                  :audio="require('@/assets/componentes/audios/tema1/48.mp3')"
                   @audio-hover="mostrarIndicadorAudio = false"
                 )
                   .indicador--click(v-if="mostrarIndicadorAudio")
-                p.text-center.text-bold.colr <em>MUST + NOT</em>
-                p.text-center.colr <em>I MUSTN’T</em>
-                p.text-center.colr <em>YOU MUSTN’T</em>
-                p.text-center.colr <em>WE MUSTN’T</em>
-                p.text-center.colr <em>HE MUSTN’T</em>
-                p.text-center.colr <em>SHE MUSTN’T</em>
-                p.text-center.colr <em>IT MUSTN’T</em>
-                p.text-center.colr <em>THEY MUSTN’T</em>
+                p.text-center.text-bold.colr <em>MUST</em>
+                p.text-center.colr <em>MUST I?</em>
+                p.text-center.colr <em>MUST YOU?</em>
+                p.text-center.colr <em>MUST WE?</em>
+                p.text-center.colr <em>MUST HE?</em>
+                p.text-center.colr <em>MUST SHE?</em>
+                p.text-center.colr <em>MUST IT?</em>
+                p.text-center.colr <em>MUST THEY?</em>
       .row.mb-5.justify-content-center
         .col-lg-6.col-xl-6.mb-3.mb-lg-0(data-aos="fade-right")
           figure.d-flex.justify-content-center
@@ -822,7 +822,7 @@ export default {
     dialogo5: [
       {
         textoIng:
-          '<em><b>Structure in use</b><br><br>I could go to the party but i do not want to.<br>She should be the best student in the class.<br>They must practice twice a week.</em>',
+          '<em><b>Structure in use</b><br><br>I could go to the party but I do not want to.<br>She should be the best student in the class.<br>They must practice twice a week.</em>',
         textoEsp:
           'Yo pude ir a la fiesta, pero no quise.<br>Ella debería ser la mejor estudiante en la clase.<br>Ellos deben practicar dos veces a la semana.',
         audio: require('@/assets/componentes/audios/tema1/14.mp3'),
