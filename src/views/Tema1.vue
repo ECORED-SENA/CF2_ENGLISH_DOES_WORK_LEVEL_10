@@ -231,7 +231,7 @@
                       td.bgr_5 
                         p <em>habitual action in the past</em>
                     tr
-                      td.bgr_5 <em>Ought too</em>
+                      td.bgr_5 <em>Ought to</em>
                       td.bgr_5 
                         p <em>obligation</em>
                         p <em>strong likelihood</em>
@@ -540,9 +540,9 @@
                 p.text-center.colr <em>YOU HAVE TO…</em>
                 p.text-center.colr <em>WE HAVE TO…</em>
                 p.text-center.colr <em>THEY HAVE TO…</em>
-                p.text-center.colr <em>SHE HAVE TO…</em>
-                p.text-center.colr <em>IT HAVE TO…</em>
-                p.text-center.colr <em>HE HAVE TO…</em>
+                p.text-center.colr <em>SHE HAS TO…</em>
+                p.text-center.colr <em>IT HAS TO…</em>
+                p.text-center.colr <em>HE HAS TO…</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
                   :audio="require('@/assets/componentes/audios/tema1/27.mp3')"
@@ -554,9 +554,9 @@
                 p.text-center.colr <em>YOU DON’T HAVE TO…</em>
                 p.text-center.colr <em>WE DON’T HAVE TO…</em>
                 p.text-center.colr <em>THEY DON’T HAVE TO…</em>
-                p.text-center.colr <em>SHE DON’T HAVE TO…</em>
-                p.text-center.colr <em>IT DON’T HAVE TO…</em>
-                p.text-center.colr <em>HE DON’T HAVE TO…</em>
+                p.text-center.colr <em>SHE DOESN’T HAVE TO…</em>
+                p.text-center.colr <em>IT DOESN’T HAVE TO…</em>
+                p.text-center.colr <em>HE DOESN’T HAVE TO…</em>
               .tarjeta.bgr_1.p-3
                 Audio.color-acento-botones.m-auto.mb-3(
                   :audio="require('@/assets/componentes/audios/tema1/28.mp3')"
@@ -789,7 +789,7 @@ export default {
     dialogo1: [
       {
         textoIng:
-          '<em>Tech affects the form people communicate, learn, and think, so it helps to interact through different channels. The tech plays an important paper in the society nowadays and has positive and negative effects, it is around our reality and that is the reason why we invite you to learn and practice some vocabulary that is shown next:</em>',
+          '<em>Tech affects the form people communicate, learn, and think, so it helps to interact through different channels. The tech plays an important paper in the society nowadays and has positive and negative effects, it is around our reality   and that is the reason why we invite you to learn and practice some vocabulary that is shown next:</em>',
         textoEsp:
           'La tecnología afecta la forma en que las personas se comunican, aprenden y piensan, por lo que ayuda a interactuar a través de diferentes canales. La tecnología juega un papel importante en la sociedad actual y tiene efectos positivos y negativos, está en torno a nuestra realidad y es por esta razón que lo invitamos a aprender y practicar el vocabulario que se muestra a continuación:',
       },
